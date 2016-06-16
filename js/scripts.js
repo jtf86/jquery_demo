@@ -8,7 +8,9 @@ $(document).ready(function() {
     $('#new_item').trigger("reset");
   });
 
-
+  $("button#refresh").click(function() {
+    location.reload();
+  });
 
 
 
