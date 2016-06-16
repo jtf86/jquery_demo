@@ -4,7 +4,14 @@ $(document).ready(function() {
     event.preventDefault();
     debugger;
     var item = $("#item").val();
-    $("ul#my_list").append("<li>" + item + "</li>");
+
+    // Conditional Statement
+    if (item.length <= 5) {
+      $("ul#my_list").append("<li>" + item + "</li>");
+    } else {
+      alert("Must be less than 6 letters");
+    }
+
     $('#new_item').trigger("reset");
   });
 
@@ -12,7 +19,8 @@ $(document).ready(function() {
     location.reload();
   });
 
-
-
+  $(".image_toggle").click(function() {
+    $(".coder_image").toggle();
+  });
 
 });
