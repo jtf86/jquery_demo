@@ -20,13 +20,16 @@
     <!-- Entry Form -->
     <div class="container">
       <form id="new_item">
-          <label for="item">My Item</label>
-          <input type="text" id="item">
+          <div class="">
+            <label for="item">My Item</label>
+            <input type="text" id="item">
+          </div>
+          <button type="submit" id="submit">Add this item to the list</button>
       </form>
 
     </div>
     <!-- List -->
-    <div class="container list">
+    <div class="container list jumbotron">
       <h5>Things I'm Listing</h5>
       <ul id="my_list">
 
@@ -35,7 +38,7 @@
 
     <!-- Refresh -->
     <div class="container refresh">
-
+      <button type="button" id="refresh">Reset this list</button>
     </div>
   </body>
 </html>
